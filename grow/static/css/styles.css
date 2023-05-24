@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+
+}
+
+.sky{
+    position: relative; /* or position: absolute/fixed */
+    z-index: 2;
+    box-sizing: border-box;
+    margin: 0;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+.grass {
+    position: fixed; /* or position: absolute */
+    z-index: 2;
+    box-sizing: border-box;
+    margin: -100px;
+    margin-bottom: 0;
+    height: 30vh;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    opacity: 80%;
+}
+
+#logo {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 500px;
+}
+form{
+    position: relative; /* or position: absolute */
+    margin: auto;
+/*    margin-left: 15%;
+    margin-right: 15%;*/
+    z-index: 5;
+    width: 80%;
+    max-width: 1000px;
+
+}
+.form_box{
+
+    margin-top: 5%;
+    margin-bottom: 0px;
+    position: relative; /* or position: absolute */
+    background: white;
+    opacity: 90%;
+    z-index: 7;
+    top: 0%;
+}
+
+.mb-3{
+    margin: auto;
+        width: 100%;
+    background: #63A7EE;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+
+}
+
+label{
+        font: extra-expanded;
+
+}
+
+.mb-4{
+    margin-top: 5%;
+    margin-bottom: 0px;
+    position: relative; /* or position: absolute */
+    background: white;
+    opacity: 90%;
+    z-index: 7;
+    top: 0%;
+
+}
+.text-center{
+    top:3%;
+    /*margin-top: 5%;*/
+    color: #63A7EE;
+}
+
+
+/*h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px
+}*/
+
+
+      /*
+      .container {
+            margin-top: 50px;
+        }
+
+        .form-label-top {
+            text-align: right;
+            padding-top: 5px;
+        }      */

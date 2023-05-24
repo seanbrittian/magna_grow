@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>MAGNA LVL Grow</title>
+  </head>
+  <body>
+  {% load static %}
+  <img id="logo" src="{% static 'images/lightbulbplant.svg' %}" width="30%" />
+
+ <h1 class="text-center">MAGNA LVL Grow</h1>
+        <h1 class="text-center">Employee Form</h1>
+ <form method="POST"{% comment %} action="{% url 'form_submit' %}"{% endcomment %}>
+            {% csrf_token %}
+          <div class="mb-3">
+                <label for="exampleInputEmail1" class="col-sm-3 col-form-label form-label-top">Employee Name:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="employee_name" name="employee_name" maxlength="255">
+                </div>
+                          <div id="emailHelp" class="col-sm-3 col-form-label form-label-top">We'll never share your email with anyone else.</div>
+
+            </div>
+
+          <div class="mb-3">
+                <label for="employee_name" class="col-sm-3 col-form-label form-label-top">Employee Name:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="employee_name" name="employee_name" maxlength="255">
+                </div>
+            </div>
+
+            <!-- Repeat the same structure for other form fields -->
+
+            <div class="mb-3">
+                <label for="idea_description" class="col-sm-3 col-form-label form-label-top">Idea Description:</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="idea_description" name="idea_description" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="employee_email" class="col-sm-3 col-form-label">Employee Email:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="employee_email" name="employee_email" maxlength="25">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="shift" class="col-sm-3 col-form-label">Shift:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="shift" name="shift" maxlength="255">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="division" class="col-sm-3 col-form-label">Division:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="division" name="division" maxlength="255">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="department" class="col-sm-3 col-form-label">Department:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="department" name="department" maxlength="255">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="line" class="col-sm-3 col-form-label">Line:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="line" name="line" maxlength="25">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="station" class="col-sm-3 col-form-label">Station:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="station" name="station" maxlength="255">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="col-sm-3 col-form-label">Type:</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" id="type" name="type" maxlength="255">
+                </div>
+            </div>
+
+             <div class="mb-3">
+            <label for="area" class="col-sm-3 col-form-label">Area:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="area" name="area" maxlength="255">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="current_description" class="col-sm-3 col-form-label">Current Description:</label>
+            <div class="col-sm-9">
+                <textarea class="form-control" id="current_description" name="current_description" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="idea_description" class="col-sm-3 col-form-label">Idea Description:</label>
+            <div class="col-sm-9">
+                <textarea class="form-control" id="idea_description" name="idea_description" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="col-sm-9 offset-sm-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
